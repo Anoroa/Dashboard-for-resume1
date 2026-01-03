@@ -4,9 +4,9 @@ import Breadcrumbs from "../Components/Breadcrumbs"
 
 const DashboardLayout = () => {
   return (
-    <div className="flex gap-12 pt-5.75">
+    <div className="flex">
       <SideNav />
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-8 pl-12 bg-gray-50 w-full h-screen">
         <Breadcrumbs />
         <Outlet />
       </div>

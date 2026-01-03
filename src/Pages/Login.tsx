@@ -9,6 +9,9 @@ import { appendData } from "../Redux/userSlice";
 import Cookies from "js-cookie";
 
 const Login = () => {
+  useEffect(() => {
+    document.title = "Login | Dashboard";
+  }, []);
   // Cookies.remove("token");
   // -----------States----------------
   const [data, setData] = useState({

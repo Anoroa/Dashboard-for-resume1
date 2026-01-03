@@ -1,9 +1,10 @@
-
+import { useEffect } from "react";
 
 const Billing = () => {
-  return (
-    <div>Billing</div>
-  )
-}
+  useEffect(() => {
+    document.title = "Billing | Dashboard";
+  }, []);
+  return <div>Billing</div>;
+};
 
-export default Billing
+export default Billing;
