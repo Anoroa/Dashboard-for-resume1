@@ -6,6 +6,7 @@ import { LuEye, LuEyeClosed } from "react-icons/lu";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { appendData } from "../Redux/userSlice";
+import Cookies from "js-cookie";
 
 const Login = () => {
   // Cookies.remove("token");
@@ -55,9 +56,9 @@ const Login = () => {
         (res) => (
           setLoading(false),
           dispatch(appendData(res.data.data)),
-          // Cookies.set("token", res.data.data.accessToken, { expires: 3 }),
+          Cookies.set("accessToken", res.data.data.accessToken, { expires: 3 }),
           console.log(res),
-          navigate("/dashboard"),
+          navigate("/auth/dashboard"),
           setSuccess("Logged in successfully")
         )
       )
@@ -77,7 +78,7 @@ const Login = () => {
     <>
       <div className="w-full h-screen flex justify-center items-center bg-gray-200">
         <div className="card px-10 pt-10 pb-6 border border-gray-100 rounded-2xl shadow-xl bg-gray-50">
-          <h2 className="text-2xl text-center mb-5 font-mono">Login</h2>
+          <h2 className="text-2xl text-center mb-5 font-faculty">Login</h2>
           <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
             <input
               type="text"
