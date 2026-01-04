@@ -24,7 +24,7 @@ const StatsCard = () => {
   console.log(users);
   console.log(`sales: ${sales}`);
   return (
-    <div className="flex gap-6">
+    <div className="flex justify-between">
       {/* card 1 */}
       <div className="singleStat py-[17.5px] pl-5.5 pr-[17.5px] bg-white w-95.5 rounded-2xl mt-7.5 shadow-sm flex justify-between">
         <div className="col-1">

@@ -1,8 +1,8 @@
-import banner from "../assets/bannerIMG.png";
+import banner from "../../assets/bannerIMG.png";
 
 const BannerCard1 = () => {
   return (
-    <div className="w-231 h-72.5 mt-6 py-4.5 px-5 bg-white shadow-md rounded-2xl flex justify-between">
+    <div className="w-231 h-72.5 py-4.5 px-5 bg-white shadow-md rounded-2xl flex justify-between">
       {/* col1 */}
       <div className="flex flex-col justify-between h-full">
         <div>

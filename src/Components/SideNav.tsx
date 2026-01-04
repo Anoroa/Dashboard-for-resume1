@@ -38,7 +38,7 @@ const SideNav = () => {
 
   return (
     <>
-      <nav className=" mb-auto w-74.5 h-screen bg-[#f8f9fa] shadow-lg">
+      <nav className=" mb-auto w-74.5 h-screen bg-[#f8f9fa] shadow-sm">
         <div className="container pl-10.5 mx-auto">
           {/* Logo and Title */}
           <div className="logo pt-11 flex gap-3">
